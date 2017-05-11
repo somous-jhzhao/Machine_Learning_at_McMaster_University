@@ -2,7 +2,7 @@ Command Terminal
 ****************
 
 Set up a Terminal for Windows 10
-===============================
+==================================
 
 #. **Install Ubuntu**
   
