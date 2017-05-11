@@ -10,7 +10,11 @@ Build Python Programming Environment for Machine Learning
    :maxdepth: 2
    :caption: Contents:
 
-   programming_environment
+   terminal
+   git_hub
+   text_editor
+   python_and_scikit_learn
+
 
 
 Indices and tables
