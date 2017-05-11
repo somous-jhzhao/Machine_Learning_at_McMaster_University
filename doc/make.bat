@@ -9,7 +9,7 @@ if "%SPHINXBUILD%" == "" (
 )
 set SOURCEDIR=.
 set BUILDDIR=_build
-set SPHINXPROJ=MachineLearningMcMaster
+set SPHINXPROJ=BuildPythonProgrammingEnvironmentforMachineLearning
 
 if "%1" == "" goto help
 
