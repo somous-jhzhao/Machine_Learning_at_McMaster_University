@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>text_editor &mdash; Machine Learning @McMaster University 0.0 documentation</title>
+  <title>Text Editors for Python &mdash; Machine Learning @McMaster University 0.0 documentation</title>
   
 
   
@@ -88,7 +88,7 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="terminal.html">Command Terminal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="git_hub.html">Git-hub</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">text_editor</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Text Editors for Python</a></li>
 <li class="toctree-l1"><a class="reference internal" href="python_and_scikit_learn.html">python_and_scikit_learn</a></li>
 </ul>
 
@@ -120,7 +120,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li>text_editor</li>
+    <li>Text Editors for Python</li>
       <li class="wy-breadcrumbs-aside">
         
           
@@ -132,14 +132,74 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="text-editor">
-<h1>text_editor<a class="headerlink" href="#text-editor" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="text-editors-for-python">
+<h1>Text Editors for Python<a class="headerlink" href="#text-editors-for-python" title="Permalink to this headline">¶</a></h1>
 <p>Two text editors are my favourites, vim and sublime text 3, both of which have been widely used in programming.
 Vim is very powerful, but a little difficult for learn at the beginning. Sublime is smart and easy to use.</p>
-<ol class="arabic simple">
-<li>Vim
+<ol class="arabic">
+<li><p class="first">Vim
 Vim is pre-installed in most linux systems as well as Mac OSX systems. If you want to install vim from
-cmd command lines. Here is a example that has been set.</li>
+cmd command lines. Here is a example that has been set.</p>
+</li>
+<li><p class="first">Sublime
+Dowonload Sublime 3 from <a class="reference external" href="https://www.sublimetext.com/3">https://www.sublimetext.com/3</a> and choose the right package accordingly.
+<em>Install subl command line tool</em> (you can skip this setp)
+Mac OSX: <code class="docutils literal"><span class="pre">sudo</span> <span class="pre">ln</span> <span class="pre">-s</span> <span class="pre">/Applications/Sublime\</span> <span class="pre">Text.app/Contents/SharedSupport/bin/subl</span> <span class="pre">/usr/bin/subl</span></code>
+Linux: modify it accordingly. If it does&#8217;t work, tyr <code class="docutils literal"><span class="pre">echo</span> <span class="pre">&quot;export</span> <span class="pre">PATH=~/bin:$PATH&quot;</span> <span class="pre">&gt;&gt;</span> <span class="pre">~/.profile</span></code></p>
+<p><em>Install Package Control</em>
+Click <strong>View &gt; Show Console</strong> to open the ST3 console and then copy this code into it:</p>
+<div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="c1">#coding:utf-8</span>
+
+<span class="kn">import</span> <span class="nn">urllib.request</span><span class="o">,</span><span class="nn">os</span><span class="o">,</span><span class="nn">hashlib</span><span class="p">;</span> <span class="n">h</span> <span class="o">=</span> <span class="s1">&#39;df21e130d211cfc94d9b0905775a7c0f&#39;</span> <span class="o">+</span>
+<span class="s1">&#39;1e3d39e33b79698005270310898eea76&#39;</span><span class="p">;</span> <span class="n">pf</span> <span class="o">=</span> <span class="s1">&#39;Package Control.sublime-package&#39;</span><span class="p">;</span>
+<span class="n">ipp</span> <span class="o">=</span> <span class="n">sublime</span><span class="o">.</span><span class="n">installed_packages_path</span><span class="p">();</span>
+<span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">install_opener</span><span class="p">(</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">build_opener</span><span class="p">(</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">ProxyHandler</span><span class="p">())</span> <span class="p">);</span>
+<span class="n">by</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span> <span class="s1">&#39;http://packagecontrol.io/&#39;</span> <span class="o">+</span> <span class="n">pf</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="s1">&#39;%20&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">read</span><span class="p">();</span>
+<span class="n">dh</span> <span class="o">=</span> <span class="n">hashlib</span><span class="o">.</span><span class="n">sha256</span><span class="p">(</span><span class="n">by</span><span class="p">)</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">();</span> <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Error validating download (got </span><span class="si">%s</span><span class="s1"> instead of </span><span class="si">%s</span><span class="s1">),</span>
+<span class="n">please</span> <span class="k">try</span> <span class="n">manual</span> <span class="n">install</span><span class="s1">&#39; % (dh, h)) if dh != h else open(os.path.join( ipp, pf), &#39;</span><span class="n">wb</span><span class="s1">&#39; ).write(by)</span>
+</pre></div>
+</div>
+<p>You can now install packages by using the keyboard shortcut cmd+shift+P.
+Start typing install until Package Control: Install Package appears.
+Press enter and search for available packages.</p>
+<p><strong>Install SideBarEnhancements Package</strong></p>
+<p>Download or clone the contents of this repository to a folder named exactly as the package name into the Packages/ folder of ST.
+Otherwise, refer <a class="reference external" href="https://packagecontrol.io/packages/SideBarEnhancements">https://packagecontrol.io/packages/SideBarEnhancements</a>.</p>
+<p><strong>Install Anaconda</strong></p>
+<p>Install Anaconda package with the help of Package Control. For a full description of its features, you may consult
+<a class="reference external" href="https://packagecontrol.io/packages/Anaconda">https://packagecontrol.io/packages/Anaconda</a>.
+Don&#8217;t forget to add <code class="docutils literal"><span class="pre">{&quot;anaconda_linting&quot;:</span> <span class="pre">false}</span></code> in Anaconda User setting file.</p>
+<p><strong>Install python-PEP8</strong></p>
+<p>Install python-pep8, which is a powerful tool for PEP8 formating of python codes. It&#8217;s eays to install it with Package Control.</p>
+<p><strong>Install sublimerge</strong></p>
+<p>This is a powerful tool for a lot of interesting things. It&#8217;s the same way of installization. And the website is
+<a class="reference external" href="https://packagecontrol.io/packages/Sublimerge%203">https://packagecontrol.io/packages/Sublimerge%203</a>.</p>
+<p><strong>Other fatures</strong>
+You can make full use of this great article <a class="reference external" href="https://realpython.com/blog/python/setting-up-sublime-text-3-for-full-stack-python-development/">https://realpython.com/blog/python/setting-up-sublime-text-3-for-full-stack-python-development/</a>.</p>
+<p>It&#8217;s very important to trim the tailing white space. You may configure your user setting file of sublime like:</p>
+<div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="c1">#coding:utf-8</span>
+
+<span class="p">{</span><span class="s2">&quot;auto_indent&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+      <span class="s2">&quot;color_scheme&quot;</span><span class="p">:</span> <span class="s2">&quot;Packages/User/SublimeLinter/Monokai (SL).tmTheme&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;font_size&quot;</span><span class="p">:</span> <span class="mi">14</span><span class="p">,</span>
+      <span class="s2">&quot;ignored_packages&quot;</span><span class="p">:</span>
+      <span class="p">[</span>
+            <span class="s2">&quot;Vintage&quot;</span>
+      <span class="p">],</span>
+      <span class="s2">&quot;rulers&quot;</span><span class="p">:</span>
+      <span class="p">[</span>
+            <span class="mi">79</span>
+      <span class="p">],</span>
+      <span class="s2">&quot;smart_indent&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+      <span class="s2">&quot;tab_size&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+      <span class="s2">&quot;trim_automatic_white_space&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+      <span class="s2">&quot;trim_trailing_white_space_on_save&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+      <span class="s2">&quot;use_tab_stops&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+      <span class="s2">&quot;word_wrap&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+      <span class="s2">&quot;wrap_width&quot;</span><span class="p">:</span> <span class="mi">80</span><span class="p">}</span>
+</pre></div>
+</div>
+</li>
 </ol>
 </div>
 
