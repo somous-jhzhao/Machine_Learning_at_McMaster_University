@@ -1,12 +1,12 @@
 Text Editors for Python
 ========================
 
-Two text editors are my favourites, vim and sublime text 3, both of which have been widely used in programming.
+Two text editors are my favourites, **vim** and **sublime text 3**, both of which have been widely used in programming.
 Vim is very powerful, but a little difficult for learn at the beginning. Sublime is smart and easy to use.
 
 #. Vim
    Vim is pre-installed in most linux systems as well as Mac OSX systems. If you want to install vim from
-   cmd command lines. Here is a example that has been set.
+   cmd command lines. You may follow this `tutorial <>`I have writen. 
 
 #. Sublime
    Dowonload Sublime 3 from https://www.sublimetext.com/3 and choose the right package accordingly.
@@ -64,7 +64,6 @@ Vim is very powerful, but a little difficult for learn at the beginning. Sublime
     #coding:utf-8
 
     {"auto_indent": true,
-	  "color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
 	  "font_size": 14,
 	  "ignored_packages":
 	  [

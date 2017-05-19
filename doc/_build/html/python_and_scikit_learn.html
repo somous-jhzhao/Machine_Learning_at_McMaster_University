@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>python_and_scikit_learn &mdash; Machine Learning @McMaster University 0.0 documentation</title>
+  <title>Python, Its Tools and Libraries &mdash; Machine Learning @McMaster University 0.9 documentation</title>
   
 
   
@@ -33,8 +33,8 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="Machine Learning @McMaster University 0.0 documentation" href="index.html"/>
-        <link rel="prev" title="text_editor" href="text_editor.html"/> 
+    <link rel="top" title="Machine Learning @McMaster University 0.9 documentation" href="index.html"/>
+        <link rel="prev" title="Text Editors for Python" href="text_editor.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -62,7 +62,7 @@
             
             
               <div class="version">
-                0.0
+                0.9
               </div>
             
           
@@ -87,8 +87,13 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="terminal.html">Command Terminal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="git_hub.html">Git-hub</a></li>
-<li class="toctree-l1"><a class="reference internal" href="text_editor.html">text_editor</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">python_and_scikit_learn</a></li>
+<li class="toctree-l1"><a class="reference internal" href="text_editor.html">Text Editors for Python</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Python, Its Tools and Libraries</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#installization">Installization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#version-control-of-python"><strong>Version Control of Python</strong></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#contragulations">Contragulations</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -119,7 +124,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li>python_and_scikit_learn</li>
+    <li>Python, Its Tools and Libraries</li>
       <li class="wy-breadcrumbs-aside">
         
           
@@ -131,8 +136,121 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="python-and-scikit-learn">
-<h1>python_and_scikit_learn<a class="headerlink" href="#python-and-scikit-learn" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="python-its-tools-and-libraries">
+<h1>Python, Its Tools and Libraries<a class="headerlink" href="#python-its-tools-and-libraries" title="Permalink to this headline">¶</a></h1>
+<p>In this part, we will first install python 3.6 and some libraries with the help of pip.
+Then we will show how to work with one of the best tools for python learning and teaching, ipython.
+However, if you don&#8217;t like the command line way of programming, the easiest way is to install Anaconda,
+<a class="reference external" href="https://www.continuum.io/downloads">https://www.continuum.io/downloads</a>.</p>
+<div class="section" id="installization">
+<h2>Installization<a class="headerlink" href="#installization" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p class="first"><strong>Install Python</strong></p>
+<p>Although Python 2 has been widely used, we recommand to use Python 3 instead. If you have some projects
+written in python 2, there are some optinional ways for version control of python.</p>
+<p>Go to <a class="reference external" href="https://www.python.org/downloads/">https://www.python.org/downloads/</a>, and download the latest version of python.</p>
+</li>
+<li><p class="first"><strong>Install Pip</strong></p>
+<p>It is recommended to install pip 3 in consistence with python 3.6. A detailed instruction
+can be found: <a class="reference external" href="https://pip.pypa.io/en/stable/installing/">https://pip.pypa.io/en/stable/installing/</a>. One converntial way install it is with this script:
+<a class="reference external" href="https://bootstrap.pypa.io/get-pip.py">https://bootstrap.pypa.io/get-pip.py</a>.</p>
+<p><code class="docutils literal"><span class="pre">python</span> <span class="pre">get-pip.py</span></code></p>
+<p>We can use pip to install, upgrade, uninstall python packages. Here are some examples.</p>
+<div class="highlight-python" id="pip-examples"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">search</span> <span class="n">numpy</span>
+<span class="n">pip</span> <span class="n">install</span> <span class="n">numpy</span>
+<span class="n">pip</span> <span class="n">install</span> <span class="n">numpy</span> <span class="o">-</span><span class="n">U</span> <span class="c1">#update python libraries</span>
+<span class="n">pip</span> <span class="n">install</span> <span class="n">numpy</span> <span class="o">--</span><span class="n">upgrade</span> <span class="c1">#update python libraries way 2</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first"><strong>Install machine learning python libraries</strong>
+The often used python libraries are <em>numpy</em>, <em>pandas</em>, <em>matplotlib</em>, <em>pybrain</em>, <em>statsmodels</em>,
+and <em>scikit-learn</em>. A good online tutorial is worth reading:
+<a class="reference external" href="http://machinelearningmastery.com/setup-python-environment-machine-learning-deep-learning-anaconda/">http://machinelearningmastery.com/setup-python-environment-machine-learning-deep-learning-anaconda/</a>.
+Then we can make use of <em>pip</em> to install python libraries.
+The official website of scikit-learn is a gold ore: <a class="reference external" href="http://scikit-learn.org/stable/index.html">http://scikit-learn.org/stable/index.html</a>. Install scikit by pip.
+A good Scipy leture notes can be found here: <a class="reference external" href="http://www.scipy-lectures.org/">http://www.scipy-lectures.org/</a>.</p>
+</li>
+<li><p class="first"><strong>Install Ipython</strong>
+IPython provides a rich architecture for interactive computing with:
+a powerful interactive shell and a kernel for Jupyter. It&#8217;s quite easy
+to install Ipython by <em>pip</em>:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ pip3 install ipython
+</pre></div>
+</div>
+</li>
+<li><p class="first"><strong>Install Jupyter</strong>
+Anaconda conveniently installs Python, the Jupyter Notebook,
+and other commonly used packages for scientific computing and
+data science. But if Anaconda is not your choice, you can install
+Jupyter by <em>pip</em>.</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ pip3 install --upgrade pip
+$ pip3 install jupyter
+</pre></div>
+</div>
+<p>Once you have <em>Jupyter</em> installed, you can run notebook:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ jupyter-notebook-3.6 test.ipynb
+<span class="c1">#you can also do it in this way</span>
+$ jupyter-3.6 notebook test.ipynb
+</pre></div>
+</div>
+<p>An interesting book might help: <a class="reference external" href="https://ipython.org/books.html">https://ipython.org/books.html</a>.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="version-control-of-python">
+<h2><strong>Version Control of Python</strong><a class="headerlink" href="#version-control-of-python" title="Permalink to this headline">¶</a></h2>
+<p>Sometimes, you have to work with both python 2 and python 3 and version control will become of a big concern.
+Otherwise, you will come accorss some unexpcted errors.</p>
+<p><strong>For Mac Users</strong></p>
+<p>For now, maybe <em>MacPorts</em> is a good choice for people working with different python versions.
+The prerequisites to install <em>MacPorts</em> is that you have <a class="reference external" href="https://developer.apple.com/xcode/">Xcode</a>
+installed. Don&#8217;t forget to open <em>Xcode</em> to accept the licence.
+Then go to the offical website of MacPorts: <a class="reference external" href="https://www.macports.org/install.php">https://www.macports.org/install.php</a> and now you can install it
+by yourself. Now you can use <em>Macports</em> to do the version control.</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ port search python3*
+$ sudo port install python36 @3.6.0
+$ port search python2*
+$ sudo port install python27 @2.7.13
+$ port installed <span class="p">|</span> grep python
+$ sudo port <span class="k">select</span> --set python python36 @3.6.0
+</pre></div>
+</div>
+<p><strong>For Linux Users</strong></p>
+<p>This is a more generalized way for python version control, where we will use
+<a class="reference external" href="https://github.com/pyenv/pyenv">pyenv</a>. Here is how to install <em>pyenv</em>:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="c1">#install</span>
+$ curl -L https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer <span class="p">|</span> bash
+<span class="c1">#update</span>
+$ pyenv update
+<span class="c1">#check if the following have has been added in ~/.bashrc</span>
+<span class="c1">#otherwise, add them</span>
+$ <span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="s2">&quot;~/.pyenv/bin:</span><span class="nv">$PATH</span><span class="s2">&quot;</span>
+$ <span class="nb">eval</span> <span class="s2">&quot;</span><span class="k">$(</span>pyenv init -<span class="k">)</span><span class="s2">&quot;</span>
+$ <span class="nb">eval</span> <span class="s2">&quot;</span><span class="k">$(</span>pyenv virtualenv-init -<span class="k">)</span><span class="s2">&quot;</span>
+</pre></div>
+</div>
+<p>Once you have pyenv installed, you can use it to install any specific version
+of python.</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="c1">#this part is based on http://akbaribrahim.com/managing-multiple-python-versions-with-pyenv/</span>
+<span class="c1">#search step need to be added</span>
+$ pyenv install <span class="m">3</span>.6.0
+$ pyenv install <span class="m">2</span>.7.13
+<span class="c1">#check th current version</span>
+$ pyenv version
+<span class="c1">#set specific version globally</span>
+$ pyenv global <span class="m">3</span>.6.0
+<span class="c1">#if you want to set a python version for the current shell session</span>
+$ pyenv shell <span class="m">3</span>.6.0
+</pre></div>
+</div>
+<p>For more information, you may refer to the <em>pyenv</em>
+<a class="reference external" href="https://github.com/pyenv/pyenv#installation">https://github.com/pyenv/pyenv#installation</a>.</p>
+</div>
+<div class="section" id="contragulations">
+<h2>Contragulations<a class="headerlink" href="#contragulations" title="Permalink to this headline">¶</a></h2>
+<p><strong>You are all set for python!!!</strong></p>
+</div>
 </div>
 
 
@@ -143,7 +261,7 @@
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
       
-        <a href="text_editor.html" class="btn btn-neutral" title="text_editor" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="text_editor.html" class="btn btn-neutral" title="Text Editors for Python" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -174,7 +292,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'0.0',
+            VERSION:'0.9',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true

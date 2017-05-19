@@ -20,11 +20,3 @@ setp-by-step tutorial to guide people how can they build theri python programmin
    text_editor
    python_and_scikit_learn
 
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
