@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Git-hub &mdash; Machine Learning @McMaster University 0.9 documentation</title>
+  <title>Git-hub &mdash; Machine Learning @McMaster University 1.2 documentation</title>
   
 
   
@@ -33,7 +33,7 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="Machine Learning @McMaster University 0.9 documentation" href="index.html"/>
+    <link rel="top" title="Machine Learning @McMaster University 1.2 documentation" href="index.html"/>
         <link rel="next" title="Text Editors for Python" href="text_editor.html"/>
         <link rel="prev" title="Command Terminal" href="terminal.html"/> 
 
@@ -63,7 +63,7 @@
             
             
               <div class="version">
-                0.9
+                1.2
               </div>
             
           
@@ -139,19 +139,27 @@
 #. Add the sudo password which is essential for installing packages.``sudo passwd``</p>
 <ol class="arabic">
 <li><p class="first">Install git.</p>
-<p><code class="docutils literal"><span class="pre">sudo</span> <span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">git</span></code></p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ sudo apt-get install git
+</pre></div>
+</div>
 </li>
 <li><p class="first">Configure the git-hub account.</p>
-<p><code class="docutils literal"><span class="pre">git</span> <span class="pre">config</span> <span class="pre">--global</span> <span class="pre">uers.name</span> <span class="pre">&quot;your_user_name&quot;</span></code>
-<code class="docutils literal"><span class="pre">git</span> <span class="pre">config</span> <span class="pre">--global</span> <span class="pre">user.email</span> <span class="pre">&quot;your_email_address&quot;</span></code>
-If you have a two factor authentation, you need a
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ git config --global uers.name <span class="s2">&quot;your_user_name&quot;</span>
+$ git config --global user.email <span class="s2">&quot;your_email_address&quot;</span>
+</pre></div>
+</div>
+<p>If you have a two factor authentation, you need a
 <strong>Personal access token</strong> to access the private repos.</p>
-<p><strong>NOte</strong>
-For Fedora and Centos user, try</p>
-<p><code class="docutils literal"><span class="pre">sudo</span> <span class="pre">yum</span> <span class="pre">install</span> <span class="pre">git</span></code>,
-where the  administrative password is required. If there a error message,
-try to add the admin password by</p>
-<p><code class="docutils literal"><span class="pre">sudo</span> <span class="pre">passwd</span> <span class="pre">root</span></code></p>
+<p><strong>Note</strong></p>
+<p>For Fedora and Centos users, try</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ sudo yum install git<span class="sb">``</span>,
+where the  administrative password is required.
+</pre></div>
+</div>
+<p>If there a error message, try to add the admin password by</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ sudo passwd root<span class="sb">``</span>
+</pre></div>
+</div>
 </li>
 </ol>
 <p>Go to <a class="reference external" href="https://education.github.com">https://education.github.com</a> for more trainings.</p>
@@ -198,7 +206,7 @@ try to add the admin password by</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'0.9',
+            VERSION:'1.2',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true
