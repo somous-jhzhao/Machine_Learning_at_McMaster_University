@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Command Terminal &mdash; Machine Learning @McMaster University 0.9 documentation</title>
+  <title>Git-hub &mdash; Machine Learning @McMaster University 1.2 documentation</title>
   
 
   
@@ -33,9 +33,9 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="Machine Learning @McMaster University 0.9 documentation" href="index.html"/>
-        <link rel="next" title="Git-hub" href="git_hub.html"/>
-        <link rel="prev" title="Build Python Programming Environment for Machine Learning" href="index.html"/> 
+    <link rel="top" title="Machine Learning @McMaster University 1.2 documentation" href="index.html"/>
+        <link rel="next" title="Text Editors for Python" href="text_editor.html"/>
+        <link rel="prev" title="Command Terminal" href="terminal.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -63,7 +63,7 @@
             
             
               <div class="version">
-                0.9
+                1.2
               </div>
             
           
@@ -86,8 +86,8 @@
             
                 <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Command Terminal</a></li>
-<li class="toctree-l1"><a class="reference internal" href="git_hub.html">Git-hub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="terminal.html">Command Terminal</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Git-hub</a></li>
 <li class="toctree-l1"><a class="reference internal" href="text_editor.html">Text Editors for Python</a></li>
 <li class="toctree-l1"><a class="reference internal" href="python_and_scikit_learn.html">Python, Its Tools and Libraries</a></li>
 </ul>
@@ -120,7 +120,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li>Command Terminal</li>
+    <li>Git-hub</li>
       <li class="wy-breadcrumbs-aside">
         
           
@@ -132,28 +132,37 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="command-terminal">
-<h1>Command Terminal<a class="headerlink" href="#command-terminal" title="Permalink to this headline">¶</a></h1>
-<p><strong>Set up a Terminal for Windows 10</strong></p>
+  <div class="section" id="git-hub">
+<h1>Git-hub<a class="headerlink" href="#git-hub" title="Permalink to this headline">¶</a></h1>
+<p>Download the latest version Git from <a class="reference external" href="https://git-scm.com/downloads">https://git-scm.com/downloads</a> according to your operating system.</p>
+<p>For windows 10 users, it&#8217;s better for you to install them with <em>Cmder</em>.
+#. Add the sudo password which is essential for installing packages.``sudo passwd``</p>
 <ol class="arabic">
-<li><p class="first"><strong>Install Ubuntu</strong></p>
-<p>Follow the instruction of <a class="reference external" href="http://www.windowscentral.com/how-install-bash-shell-command-line-windows-10">this tutorial</a>
-and <a class="reference external" href="https://jingyan.baidu.com/article/90bc8fc85ec19cf652640c5f.html.">another Chinese version tutorial</a>.
-Now please restart your laptop.</p>
+<li><p class="first">Install git.</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ sudo apt-get install git
+</pre></div>
+</div>
 </li>
-<li><p class="first"><strong>Install Cmder</strong></p>
-<p>Cmder is a more user friendly command line terminal than cmd, which gave me a shock when I used it for the first time.
-Unzip the files to <em>C:\Program Files\Cmder</em>.</p>
-<p>Add the path where the <em>cmd.exe</em> lies in to the system environment, which enables you to use <em>Cmder</em> with the
-<em>Win+r</em> shortcut followed by <em>cmder</em>. You may follow the this <a class="reference external" href="https://jingyan.baidu.com/article/8ebacdf02d3c2949f65cd5d0.html">example</a>.
-Open the cmd terminal as adminitrator, type in the following the command:</p>
-<p><code class="docutils literal"><span class="pre">cmder.exe</span> <span class="pre">/REGISTER</span> <span class="pre">ALL</span></code></p>
-<p>Now you can srart your cmder with <em>Win+Alt+P</em>. Find the setting opition at the right bottom of cmder terminal and click
-the <em>Startup</em>, choose <em>Command line</em> and set it as <code class="docutils literal"><span class="pre">bash</span> <span class="pre">-cur_console:p</span></code>. Enter the bash shell with the following way: click
-the green icon at the right bottom, choose <strong>3:{bash}</strong> and <strong>4:{bash}</strong>, open the setting window, <strong>Startup/tasks</strong>, set it as
-<strong>{bash::bash}</strong> and  set taks paramaters as <code class="docutils literal"><span class="pre">/icon</span> <span class="pre">&quot;%CMDER_ROOT%\icons\cmder.ico&quot;</span></code>, confirm and exit. Now you can use it. Enjoy!</p>
+<li><p class="first">Configure the git-hub account.</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ git config --global uers.name <span class="s2">&quot;your_user_name&quot;</span>
+$ git config --global user.email <span class="s2">&quot;your_email_address&quot;</span>
+</pre></div>
+</div>
+<p>If you have a two factor authentation, you need a
+<strong>Personal access token</strong> to access the private repos.</p>
+<p><strong>Note</strong></p>
+<p>For Fedora and Centos users, try</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ sudo yum install git<span class="sb">``</span>,
+where the  administrative password is required.
+</pre></div>
+</div>
+<p>If there a error message, try to add the admin password by</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ sudo passwd root<span class="sb">``</span>
+</pre></div>
+</div>
 </li>
 </ol>
+<p>Go to <a class="reference external" href="https://education.github.com">https://education.github.com</a> for more trainings.</p>
 </div>
 
 
@@ -163,10 +172,10 @@ the green icon at the right bottom, choose <strong>3:{bash}</strong> and <strong
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="git_hub.html" class="btn btn-neutral float-right" title="Git-hub" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="text_editor.html" class="btn btn-neutral float-right" title="Text Editors for Python" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="index.html" class="btn btn-neutral" title="Build Python Programming Environment for Machine Learning" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="terminal.html" class="btn btn-neutral" title="Command Terminal" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -197,7 +206,7 @@ the green icon at the right bottom, choose <strong>3:{bash}</strong> and <strong
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'0.9',
+            VERSION:'1.2',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true

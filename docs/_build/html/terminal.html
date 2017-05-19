@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Build Python Programming Environment for Machine Learning &mdash; Machine Learning @McMaster University 0.9 documentation</title>
+  <title>Command Terminal &mdash; Machine Learning @McMaster University 1.2 documentation</title>
   
 
   
@@ -33,8 +33,9 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="Machine Learning @McMaster University 0.9 documentation" href="#"/>
-        <link rel="next" title="Command Terminal" href="terminal.html"/> 
+    <link rel="top" title="Machine Learning @McMaster University 1.2 documentation" href="index.html"/>
+        <link rel="next" title="Git-hub" href="git_hub.html"/>
+        <link rel="prev" title="Build Python Programming Environment for Machine Learning" href="index.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -52,7 +53,7 @@
           
 
           
-            <a href="#" class="icon icon-home"> Machine Learning @McMaster University
+            <a href="index.html" class="icon icon-home"> Machine Learning @McMaster University
           
 
           
@@ -62,7 +63,7 @@
             
             
               <div class="version">
-                0.9
+                1.2
               </div>
             
           
@@ -84,8 +85,8 @@
             
             
                 <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="terminal.html">Command Terminal</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Command Terminal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="git_hub.html">Git-hub</a></li>
 <li class="toctree-l1"><a class="reference internal" href="text_editor.html">Text Editors for Python</a></li>
 <li class="toctree-l1"><a class="reference internal" href="python_and_scikit_learn.html">Python, Its Tools and Libraries</a></li>
@@ -102,7 +103,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="#">Machine Learning @McMaster University</a>
+        <a href="index.html">Machine Learning @McMaster University</a>
       </nav>
 
 
@@ -117,9 +118,9 @@
 
 <div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href="#">Docs</a> &raquo;</li>
+    <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li>Build Python Programming Environment for Machine Learning</li>
+    <li>Command Terminal</li>
       <li class="wy-breadcrumbs-aside">
         
           
@@ -131,26 +132,28 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="build-python-programming-environment-for-machine-learning">
-<h1>Build Python Programming Environment for Machine Learning<a class="headerlink" href="#build-python-programming-environment-for-machine-learning" title="Permalink to this headline">¶</a></h1>
-<p>Machine learning has been one of the most exciting field in
-modern artifical intelligence, which has chagend the way prople
-live and how scientist do their studies. Here we set up a
-setp-by-step tutorial to guide people how can they build theri python programming environment for machine learning.</p>
-<div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">Contents:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="terminal.html">Command Terminal</a></li>
-<li class="toctree-l1"><a class="reference internal" href="git_hub.html">Git-hub</a></li>
-<li class="toctree-l1"><a class="reference internal" href="text_editor.html">Text Editors for Python</a></li>
-<li class="toctree-l1"><a class="reference internal" href="python_and_scikit_learn.html">Python, Its Tools and Libraries</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="python_and_scikit_learn.html#installization">Installization</a></li>
-<li class="toctree-l2"><a class="reference internal" href="python_and_scikit_learn.html#version-control-of-python"><strong>Version Control of Python</strong></a></li>
-<li class="toctree-l2"><a class="reference internal" href="python_and_scikit_learn.html#contragulations">Contragulations</a></li>
-</ul>
+  <div class="section" id="command-terminal">
+<h1>Command Terminal<a class="headerlink" href="#command-terminal" title="Permalink to this headline">¶</a></h1>
+<p><strong>Set up a Terminal for Windows 10</strong></p>
+<ol class="arabic">
+<li><p class="first"><strong>Install Ubuntu</strong></p>
+<p>Follow the instruction of <a class="reference external" href="http://www.windowscentral.com/how-install-bash-shell-command-line-windows-10">this tutorial</a>
+and <a class="reference external" href="https://jingyan.baidu.com/article/90bc8fc85ec19cf652640c5f.html.">another Chinese version tutorial</a>.
+Now please restart your laptop.</p>
 </li>
-</ul>
-</div>
+<li><p class="first"><strong>Install Cmder</strong></p>
+<p>Cmder is a more user friendly command line terminal than cmd, which gave me a shock when I used it for the first time.
+Unzip the files to <em>C:\Program Files\Cmder</em>.</p>
+<p>Add the path where the <em>cmd.exe</em> lies in to the system environment, which enables you to use <em>Cmder</em> with the
+<em>Win+r</em> shortcut followed by <em>cmder</em>. You may follow the this <a class="reference external" href="https://jingyan.baidu.com/article/8ebacdf02d3c2949f65cd5d0.html">example</a>.
+Open the cmd terminal as adminitrator, type in the following the command:</p>
+<p><code class="docutils literal"><span class="pre">cmder.exe</span> <span class="pre">/REGISTER</span> <span class="pre">ALL</span></code></p>
+<p>Now you can srart your cmder with <em>Win+Alt+P</em>. Find the setting opition at the right bottom of cmder terminal and click
+the <em>Startup</em>, choose <em>Command line</em> and set it as <code class="docutils literal"><span class="pre">bash</span> <span class="pre">-cur_console:p</span></code>. Enter the bash shell with the following way: click
+the green icon at the right bottom, choose <strong>3:{bash}</strong> and <strong>4:{bash}</strong>, open the setting window, <strong>Startup/tasks</strong>, set it as
+<strong>{bash::bash}</strong> and  set taks paramaters as <code class="docutils literal"><span class="pre">/icon</span> <span class="pre">&quot;%CMDER_ROOT%\icons\cmder.ico&quot;</span></code>, confirm and exit. Now you can use it. Enjoy!</p>
+</li>
+</ol>
 </div>
 
 
@@ -160,8 +163,10 @@ setp-by-step tutorial to guide people how can they build theri python programmin
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="terminal.html" class="btn btn-neutral float-right" title="Command Terminal" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="git_hub.html" class="btn btn-neutral float-right" title="Git-hub" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
+      
+        <a href="index.html" class="btn btn-neutral" title="Build Python Programming Environment for Machine Learning" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -192,7 +197,7 @@ setp-by-step tutorial to guide people how can they build theri python programmin
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'0.9',
+            VERSION:'1.2',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true
