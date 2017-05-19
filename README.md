@@ -7,4 +7,4 @@ Have fun with ML (machine learning) and your Ph.D.
 (**P**robably **H**eavily in **D**ebt).
 
 Feel free to contact me if you want to build some collaboration or have some
-interesting projects to wrok together: fwmeng88@gmail.com
+interesting projects to work together with: fwmeng88@gmail.com
