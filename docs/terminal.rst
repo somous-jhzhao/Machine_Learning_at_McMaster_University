@@ -6,7 +6,7 @@ Command Terminal
 #. **Install Ubuntu**
   
    Follow the instruction of `this tutorial  <http://www.windowscentral.com/how-install-bash-shell-command-line-windows-10>`_
-   and `another Chinese version tutorial <https://jingyan.baidu.com/article/90bc8fc85ec19cf652640c5f.html.>`_. 
+   and `another Chinese version tutorial <http://www.qinglin.net/969.html>`_. 
    Now please restart your laptop.
 
 #. **Install Cmder**
