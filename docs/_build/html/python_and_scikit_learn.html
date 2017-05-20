@@ -154,12 +154,16 @@ written in python 2, there are some optinional ways for version control of pytho
 <p>It is recommended to install pip 3 in consistence with python 3.6. A detailed instruction
 can be found: <a class="reference external" href="https://pip.pypa.io/en/stable/installing/">https://pip.pypa.io/en/stable/installing/</a>. One converntial way install it is with this script:
 <a class="reference external" href="https://bootstrap.pypa.io/get-pip.py">https://bootstrap.pypa.io/get-pip.py</a>.</p>
-<p><code class="docutils literal"><span class="pre">python</span> <span class="pre">get-pip.py</span></code></p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>$ python get-pip.py
+</pre></div>
+</div>
 <p>We can use pip to install, upgrade, uninstall python packages. Here are some examples.</p>
-<div class="highlight-python" id="pip-examples"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">search</span> <span class="n">numpy</span>
-<span class="n">pip</span> <span class="n">install</span> <span class="n">numpy</span>
-<span class="n">pip</span> <span class="n">install</span> <span class="n">numpy</span> <span class="o">-</span><span class="n">U</span> <span class="c1">#update python libraries</span>
-<span class="n">pip</span> <span class="n">install</span> <span class="n">numpy</span> <span class="o">--</span><span class="n">upgrade</span> <span class="c1">#update python libraries way 2</span>
+<div class="highlight-bash" id="pip-examples"><div class="highlight"><pre><span></span>$ pip search numpy
+$ pip install numpy
+<span class="c1">#update python libraries</span>
+$ pip install numpy -U
+<span class="c1">#another way to update python libraries</span>
+$ pip install numpy --upgrade
 </pre></div>
 </div>
 </li>
