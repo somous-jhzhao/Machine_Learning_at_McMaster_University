@@ -22,18 +22,21 @@ Installization
    can be found: https://pip.pypa.io/en/stable/installing/. One converntial way install it is with this script:
    https://bootstrap.pypa.io/get-pip.py.
 
-   ``python get-pip.py``
+   .. code-block:: bash
+     
+      $ python get-pip.py
 
    We can use pip to install, upgrade, uninstall python packages. Here are some examples.
 
-   .. code-block:: python
+   .. code-block:: bash
       :name: pip examples
 
-      pip search numpy
-      pip install numpy
-      pip install numpy -U #update python libraries
-      pip install numpy --upgrade #update python libraries way 2
-
+      $ pip search numpy
+      $ pip install numpy
+      #update python libraries
+      $ pip install numpy -U
+      #another way to update python libraries
+      $ pip install numpy --upgrade
 
 #. **Install machine learning python libraries**
    The often used python libraries are *numpy*, *pandas*, *matplotlib*, *pybrain*, *statsmodels*,
