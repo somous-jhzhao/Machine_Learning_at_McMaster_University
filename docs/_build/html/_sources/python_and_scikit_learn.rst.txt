@@ -73,7 +73,7 @@ Installization
 
    An interesting book might help: https://ipython.org/books.html.  
 
-**Version Control of Python**
+Version Control of Python
 ------------------------------
 Sometimes, you have to work with both python 2 and python 3 and version control will become of a big concern.
 Otherwise, you will come accorss some unexpcted errors.
