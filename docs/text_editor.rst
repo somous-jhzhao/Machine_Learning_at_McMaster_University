@@ -5,10 +5,12 @@ Two text editors are my favourites, **vim** and **sublime text 3**, both of whic
 Vim is very powerful, but a little difficult for learn at the beginning. Sublime is smart and easy to use.
 
 #. Vim
+
    Vim is pre-installed in most linux systems as well as Mac OSX systems. If you want to install vim from
    cmd command lines. You may follow this `tutorial <https://github.com/fwmeng88/Machine_Learning_at_McMaster_University/blob/develop/vim_configure.sh>`_ I have writen.
 
 #. Sublime
+
    Dowonload Sublime 3 from https://www.sublimetext.com/3 and choose the right package accordingly.
    *Install subl command line tool* (you can skip this setp)
    Mac OSX:
