@@ -47,7 +47,7 @@ Vim is very powerful, but a little difficult for learn at the beginning. Sublime
    https://packagecontrol.io/packages/Anaconda.
    Don't forget to add ``{"anaconda_linting": false}`` in Anaconda User setting file.
 
-   **Install python-PEP8**
+   **Install Python-PEP8 Autoformat**
 
    Install python-pep8, which is a powerful tool for PEP8 formating of python codes. It's eays to install it with Package Control.
 
@@ -56,6 +56,11 @@ Vim is very powerful, but a little difficult for learn at the beginning. Sublime
    This is a powerful tool for a lot of interesting things. It's the same way of installization. And the website is
    https://packagecontrol.io/packages/Sublimerge%203.
 
+   **Install Sublime-ShellScriptImproved**
+
+   This tools enables better ShellScript (Bash) syntax highlight for Sublime Text >= 3116, which makes
+   your shell script more attractive: https://github.com/jfcherng/Sublime-ShellScriptImproved.
+   It can be installed by the *packagecontrol*.
 
    **Other fatures**
    You can make full use of this great article https://realpython.com/blog/python/setting-up-sublime-text-3-for-full-stack-python-development/.
