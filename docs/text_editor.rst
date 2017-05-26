@@ -63,6 +63,11 @@ Vim is very powerful, but a little difficult for learn at the beginning. Sublime
    This tools enables better ShellScript (Bash) syntax highlight for Sublime Text >= 3116, which makes
    your shell script more attractive: https://github.com/jfcherng/Sublime-ShellScriptImproved.
    It can be installed by the *packagecontrol*.
+   
+   **Install LaTexTools**
+
+   This tools enables the powerful preview of latex equations. You must enjoy it very much! More problems can refer to
+   GitHub repo: https://github.com/SublimeText/LaTeXTools.
 
    **Other fatures**
    You can make full use of this great article https://realpython.com/blog/python/setting-up-sublime-text-3-for-full-stack-python-development/.
