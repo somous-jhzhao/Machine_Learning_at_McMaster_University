@@ -77,4 +77,12 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-#This also might interesting to you https://realpython.com/blog/python/vim-and-python-a-match-made-in-heaven/
+#This also might interesting to you https://realpython.com/blog/python/vim-and-python-a-match-made-in-heaven\
+
+#install LaTeX-Suite (also known as Vim-LaTeX) to support rich latex features
+#for more details refer to https://github.com/vim-latex/vim-latex
+#add the following into ~/.vimrc
+Plugin 'vim-latex/vim-latex'
+#run these commands inside vim
+:source %
+:PluginInstall
