@@ -4,7 +4,7 @@ Python, Its Tools and Libraries
 In this part, we will first install python 3.6 and some libraries with the help of pip.
 Then we will show how to work with one of the best tools for python learning and teaching, ipython.
 However, if you don't like the command line way of programming, the easiest way is to install Anaconda,
-https://www.continuum.io/downloads.
+https://www.continuum.io/downloads/.
 
 Installization
 --------------

@@ -27,7 +27,7 @@ For windows 10 users, it's better for you to install them with *Cmder*.
 
    .. code-block:: bash
 
-      $ sudo yum install git``,
+      $ sudo yum install git
       where the  administrative password is required.
       
    If there a error message, try to add the admin password by

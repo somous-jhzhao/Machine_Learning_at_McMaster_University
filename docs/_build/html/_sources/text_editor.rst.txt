@@ -4,11 +4,13 @@ Text Editors for Python
 Two text editors are my favourites, **vim** and **sublime text 3**, both of which have been widely used in programming.
 Vim is very powerful, but a little difficult for learn at the beginning. Sublime is smart and easy to use.
 
-#. Vim
+#. **Vim**
+
    Vim is pre-installed in most linux systems as well as Mac OSX systems. If you want to install vim from
    cmd command lines. You may follow this `tutorial <https://github.com/fwmeng88/Machine_Learning_at_McMaster_University/blob/develop/vim_configure.sh>`_ I have writen.
 
-#. Sublime
+#. **Sublime**
+
    Dowonload Sublime 3 from https://www.sublimetext.com/3 and choose the right package accordingly.
    *Install subl command line tool* (you can skip this setp)
    Mac OSX:
@@ -47,7 +49,7 @@ Vim is very powerful, but a little difficult for learn at the beginning. Sublime
    https://packagecontrol.io/packages/Anaconda.
    Don't forget to add ``{"anaconda_linting": false}`` in Anaconda User setting file.
 
-   **Install python-PEP8**
+   **Install Python-PEP8 Autoformat**
 
    Install python-pep8, which is a powerful tool for PEP8 formating of python codes. It's eays to install it with Package Control.
 
@@ -56,6 +58,16 @@ Vim is very powerful, but a little difficult for learn at the beginning. Sublime
    This is a powerful tool for a lot of interesting things. It's the same way of installization. And the website is
    https://packagecontrol.io/packages/Sublimerge%203.
 
+   **Install Sublime-ShellScriptImproved**
+
+   This tools enables better ShellScript (Bash) syntax highlight for Sublime Text >= 3116, which makes
+   your shell script more attractive: https://github.com/jfcherng/Sublime-ShellScriptImproved.
+   It can be installed by the *packagecontrol*.
+   
+   **Install LaTexTools**
+
+   This tools enables the powerful preview of latex equations. You must enjoy it very much! More problems can refer to
+   GitHub repo: https://github.com/SublimeText/LaTeXTools.
 
    **Other fatures**
    You can make full use of this great article https://realpython.com/blog/python/setting-up-sublime-text-3-for-full-stack-python-development/.
