@@ -83,6 +83,26 @@ let g:syntastic_check_on_wq = 0
 #for more details refer to https://github.com/vim-latex/vim-latex
 #add the following into ~/.vimrc
 Plugin 'vim-latex/vim-latex'
+#add this to ~/.vimrc
+let g:tex_flavor='latex'
+filetype indent on
 #run these commands inside vim
 :source %
 :PluginInstall
+
+#tex file indent
+let g:tex_indent_items=0
+#Autopep8
+Plugin 'tell-k/vim-autopep8'
+#add it to ~/.vimrc
+let g:autopep8_diff_type='vertical'
+
+#matchit plugin"
+Plugin 'tmhedberg/matchit'
+
+#sepll check
+setlocal spell spelllang=en_us
+
+#timestamp
+#https://github.com/vim-scripts/timestamp.vim
+#copy the timestamp.vim into /Users/fwmeng/.vim/bundle
