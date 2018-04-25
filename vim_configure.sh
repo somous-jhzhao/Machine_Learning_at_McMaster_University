@@ -31,6 +31,9 @@ git clone https://github.com/humiaozuzu/dot-vimrc.git
 cp bundle.vim ~/.vim/bundle.vim
 source ~/.vimrc
 
+git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+
+
 #sudo yum install  ack ctags
 #Launch vim and run :PluginInstall
 #or
